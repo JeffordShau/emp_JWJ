@@ -1,0 +1,10 @@
+Do this 21 times:
+  Start at array length 1
+  Generate normal array, filled with random elements
+  Generate worst case scenario array, all elements in increasing order
+  For both arrays:
+    Store start time
+    Search for random value
+    When value is found, store stop time
+    Subtract and store in timestamps array
+  Multiply array length by 2 and go back to top.
