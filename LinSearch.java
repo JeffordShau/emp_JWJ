@@ -4,10 +4,10 @@
 
 public class LinSearch
 {
-    public static int linSearch ( Comparable[] a, Comparable target ) {
+    public static int linSearch ( int[] a, int target ) {
         int i = 0;
         while (i < a.length) {
-            if (a[i] == target) {
+            if (a[i]===target) {
                 return i;
             }
             i++;

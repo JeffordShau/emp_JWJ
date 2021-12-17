@@ -16,34 +16,17 @@ public class BinSearch
     }
 
 
-    public static int binSearchRec( Comparable[] a, Comparable target, int lo, int hi ) {
-        int tPos = -1;
-        int m = (lo + hi) / 2;
-        if (a[m] == target) {
-            tPos = m;
-        }
-        if (a[m] < target) {
-            lo = m + 1;
-            binSearchRec(a, target, lo, hi);
-        }
-        else if (a[m] > target) {
-            hi = m - 1;
-            binSearchRec(a, target, lo, hi);
-        }
-        return tPos;
-    }
-
-    public static int binSearchIter( Comparable[] arr,
-                                     Comparable value,
+    public static int binSearchIter( int[] arr,
+                                     int value,
                                      int lo, int hi )
     {
         int low = lo;
         int high = hi;
         while (low <= high) {
-            if (value.compareTo(arr[average(low, high)]) > 0) {
+            if (value<arr[average(low, high)]) {
                 low = average(low, high)+1;
             }
-            else if (value.compareTo(arr[average(low, high)]) < 0) {
+            else if (value>arr[average(low, high)]) {
                 high = average(low, high)-1;
             }
             else {
@@ -55,7 +38,7 @@ public class BinSearch
 
 
 
-    private static boolean isSorted( Comparable[] arr )
+    private static boolean isSorted( int[] arr )
     {
         boolean retBoo = true;
 
