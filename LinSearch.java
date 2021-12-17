@@ -2,12 +2,14 @@
  class LinSearch
  **/
 
+import java.Utils.ArrayList; 
+
 public class LinSearch
 {
-    public static int linSearch ( int[] a, int target ) {
+    public static int linSearch ( ArrayList a, int target ) {
         int i = 0;
         while (i < a.length) {
-            if (a[i]===target) {
+            if (a[i],compareTo(target)) {
                 return i;
             }
             i++;

@@ -30,7 +30,7 @@ public class BinSearch
                 high = average(low, high)-1;
             }
             else {
-                return average(low,high);
+                return average(low,high); 
             }
         }
         return -1;
