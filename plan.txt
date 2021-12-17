@@ -1,10 +1,19 @@
+/*
+JWJ (Jefford Shau, William Vongphanith, Jacob Kirmayer)
+APCS
+Lab03 -- Binary vs Linear Search
+2021-12-16
+time spent: 0.5 hr
+*/
+
 Do this 21 times:
   Start at array length 1
   Generate normal array, filled with random elements
-  Generate worst case scenario array, all elements in increasing order
-  For both arrays:
-    Store start time
-    Search for random value
-    When value is found, store stop time
-    Subtract and store in timestamps array
-  Multiply array length by 2 and go back to top.
+  - The elements in the generated array will be used to test the two methods
+  - Elements will be sorted when running Binary Search
+  For both Binary and Linear Search methods:
+    1. Store start time
+    2. Search for both random and selected values of elements in the array. Also search for both selected and random values of elements not present in the array.
+    3. When value is found or not found, store stop time
+    4. Subtract and store difference in timestamps array
+    5. Multiply array length by 2 and repeat.
