@@ -1,5 +1,5 @@
 /*
-Big Apples (Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless)
+JWJ (Jefford Shau, William Vongphanith, Jacob Kirmayer)
 APCS pd6
 L03 - Binary vs Linear
 2021-12-16
