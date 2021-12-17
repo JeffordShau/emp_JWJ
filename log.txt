@@ -1,1 +1,11 @@
+JWJ (Jefford Shau, William Vongphanith, Jacob Kirmayer)
+APCS pd6
+L03 - Binary vs Linear
+
+12/16
+- Worked on the plan. 
+- Added all required files to the repo. 
+
+12/17
+- Adjusting plan to make randomness more clear. 
 
