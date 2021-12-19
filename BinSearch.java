@@ -6,7 +6,13 @@
 public class BinSearch
 {
   public static int average(int a, int b) {
-  return (int) Math.round((a + b) / 2);
+    if (b > a) {
+      int half = (b - a) / 2;
+      return a + half;
+    } else {
+      int half = (a - b) / 2;
+      return b + half;
+    };
 }
 
   /**
@@ -17,9 +23,7 @@ public class BinSearch
   **/
   public static int binSearch ( Comparable[] a, Comparable target )
   {
-    //uncomment exactly 1 of the 2 stmts below:
-
-    return binSearchIter( a, target, 0, a.length-1 );
+    return binSearchIter( a, target, 0, a.length - 1 );
   }
 
 
@@ -30,37 +34,21 @@ public class BinSearch
 
       int low = lo;
       int high = hi;
+      int avg = average(low, high);
       while (low <= high) {
-          if (value.compareTo(arr[average(low, high)]) > 0) {
-              low = average(low, high)+1;
+          if (value.compareTo(arr[avg]) > 0) {
+              low = avg + 1;
           }
-          else if (value.compareTo(arr[average(low, high)]) < 0) {
-              high = average(low, high)-1;
+          else if (value.compareTo(arr[avg]) < 0) {
+              high = avg - 1;
           }
           else {
-              return average(low,high);
+              return avg;
           }
+          avg = average(low, high);
       }
       return -1;
   }//end binSearchIter
-
-
-
-  //tell whether an array is sorted in ascending order
-  private static boolean isSorted( Comparable[] arr )
-  {
-
-    boolean retBoo = true; //init to true, assume array is sorted
-
-    //Q: Why would a FOREACH loop not suffice here?
-    for( int i=0; i < arr.length-1; i++ ) {
-      if ( ( arr[i].compareTo(arr[i+1]) > 0 ) ) {
-        return false;
-      }
-    }
-    return retBoo; //if entire array was traversed, it must be sorted
-  }
-
 
   // utility/helper fxn to display contents of an array of Objects
   private static void toString( Comparable[] arr ) {
@@ -73,3 +61,4 @@ public class BinSearch
 
     System.out.println( output );
   }
+}
