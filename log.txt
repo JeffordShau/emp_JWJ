@@ -8,4 +8,10 @@ L03 - Binary vs Linear
 
 12/17
 - Adjusting plan to make randomness more clear. 
+- Added java files but SearchDriver.java was not yet compilabile. 
 
+12/18
+- Replaced BinSearch and LinSearch files with the code we implemented in hw48_search
+
+12/19
+- 
