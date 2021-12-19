@@ -13,17 +13,15 @@ public class LinSearch
   **/
   public static int linSearch ( Comparable[] a, Comparable target )
   {
-    int tPos = -1;
     int i = 0;
 
     while ( i < a.length ) {
-      if (a[i] == target) {
-        tPos = i;
-        return tPos;
+      if (a[i].compareTo(target) == 0) {
+        return i;
       }
       i += 1;
     }
-    return tPos;
+    return -1;
   }
 
 
@@ -39,3 +37,4 @@ public class LinSearch
 
     System.out.println( output );
   }
+}
