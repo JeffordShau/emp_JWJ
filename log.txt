@@ -14,4 +14,6 @@ L03 - Binary vs Linear
 - Replaced BinSearch and LinSearch files with the code we implemented in hw48_search
 
 12/19
-- 
+- SearchDriver.java compilable. 
+- Removed random elements from Arrays to avoid writing a sort method
+- Updated plan to reflect changes
