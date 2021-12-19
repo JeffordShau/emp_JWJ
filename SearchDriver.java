@@ -1,4 +1,3 @@
-
 public class SearchDriver {
 
     private long totalTime = 0;
@@ -17,7 +16,7 @@ public class SearchDriver {
 
     public static void main(String[] args) {
         int arrayLength = 1; // determins starting length
-        int numOfArrayTests = 22; // determins size of the arrays
+        int numOfArrayTests = 30; // determins size of the arrays
 
         SearchDriver linSearch = new SearchDriver();
         SearchDriver binSearch = new SearchDriver();
@@ -50,7 +49,7 @@ public class SearchDriver {
               long startTimeBin = System.currentTimeMillis();
               BinSearch.binSearch(newArray, randomValue);
               long endTimeBin = System.currentTimeMillis();
-              long totalTimeBin = endTimeLin - startTimeLin;
+              long totalTimeBin = endTimeBin - startTimeBin;
               binSearch.update(totalTimeBin);
 
               // prints a summary
