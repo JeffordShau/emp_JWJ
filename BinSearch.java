@@ -12,7 +12,7 @@ public class BinSearch
     } else {
       int half = (a - b) / 2;
       return b + half;
-    };
+    }
 }
 
   /**

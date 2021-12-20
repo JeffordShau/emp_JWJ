@@ -16,7 +16,7 @@ public class SearchDriver {
 
     public static void main(String[] args) {
         int arrayLength = 1; // determins starting length
-        int numOfArrayTests = 30; // determins size of the arrays
+        int numOfArrayTests = 27; // determins size of the arrays
 
         SearchDriver linSearch = new SearchDriver();
         SearchDriver binSearch = new SearchDriver();
@@ -61,8 +61,8 @@ public class SearchDriver {
           arrayLength *= 2;
           linSearch.avgTime = linSearch.totalTime / (double) 1000;
           binSearch.avgTime = binSearch.totalTime / (double) 1000;
-          System.out.println("Lin Array size: " + arrayLength + "; Lin Avg Time: " + linSearch.avgTime + "; Lin MinTime: " + linSearch.minTime + "; Lin MaxTime: " + linSearch.maxTime);
-          System.out.println("Bin Array size: " + arrayLength + "; Bin Avg Time: " + binSearch.avgTime + "; Bin MinTime: " + binSearch.minTime + "; Bin MaxTime: " + binSearch.maxTime);
+          System.out.println("Lin Array size: " + arrayLength + "; Lin Avg Time: " + linSearch.avgTime + "; Lin MaxTime: " + linSearch.maxTime);
+          System.out.println("Bin Array size: " + arrayLength + "; Bin Avg Time: " + binSearch.avgTime + "; Bin MaxTime: " + binSearch.maxTime);
         }
     }
 }
