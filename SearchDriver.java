@@ -3,14 +3,11 @@ public class SearchDriver {
     private long totalTime = 0;
     private double avgTime = 0;
     private long maxTime = 0;
-    private long minTime = 0;
 
     public void update(long time) {
         totalTime += time;
         if (time > maxTime) {
           maxTime = time;
-        } else if (time < minTime) {
-          minTime = time;
         }
     }
 
