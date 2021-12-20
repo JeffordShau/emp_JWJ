@@ -6,12 +6,13 @@ Lab03 -- Binary vs Linear Search
 time spent: 0.5 hr
 */
 
-Do this 30 times:
+Do this 27 times:
   Start at array length 1
   Generate normal array with elements in increasing order
   - The elements in the generated array will be used to test the two methods
   - Elements are already sorted for Binary Search
   For both Binary and Linear Search methods:
+    - Each search method will be tested on each array 1000 times.
     1. Store start time
     2. Search for random values of elements in the array.
     3. When value is found, store stop time.
