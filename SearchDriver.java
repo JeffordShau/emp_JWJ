@@ -30,7 +30,7 @@ public class SearchDriver {
           }
 
             // performs each array test 1000 times
-            for (int counter = 0; counter <= 1000; counter++) {
+            for (int counter = 0; counter <= 50; counter++) {
               // generates target random target
               int randomIndex = (int) (Math.random() * arrayLength);
               Comparable randomValue = newArray[randomIndex];
@@ -56,8 +56,8 @@ public class SearchDriver {
               // System.out.println("Array size: " + arrayLength + "; Random value: " + randomValue + "; Lin StartTime: " + startTimeLin + "; Lin EndTime: " + endTimeLin + "; LinSearch: " + totalTimeLin + "; Bin StartTime: " + startTimeBin + "; Bin EndTime: " + endTimeBin + "; BinSearch: " + totalTimeBin);
           }
           arrayLength *= 2;
-          linSearch.avgTime = linSearch.totalTime / (double) 1000;
-          binSearch.avgTime = binSearch.totalTime / (double) 1000;
+          linSearch.avgTime = linSearch.totalTime / (double) 50;
+          binSearch.avgTime = binSearch.totalTime / (double) 50;
           System.out.println("Lin Array size: " + arrayLength + "; Lin Avg Time: " + linSearch.avgTime + "; Lin MaxTime: " + linSearch.maxTime);
           System.out.println("Bin Array size: " + arrayLength + "; Bin Avg Time: " + binSearch.avgTime + "; Bin MaxTime: " + binSearch.maxTime);
         }
