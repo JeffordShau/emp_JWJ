@@ -18,3 +18,7 @@ L03 - Binary vs Linear
 - Removed random elements from Arrays to avoid writing a sort method.
 - Updated plan to reflect changes.
 - Updated BinSearch and LinSearch files to make them more concise. 
+
+12/20
+- Updated Readme.md to add reults, test cases, and conclusion
+- Updated SearchDriver to remove minTime
