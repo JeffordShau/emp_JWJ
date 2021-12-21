@@ -13,3 +13,26 @@ DISCO:
 QCC:
   - Does the hypothesis we are testing also refer to arrays with random elements? If so, would we also include the sorting process in the time elapsed?
 */
+
+GALLERY TOUR:
+    CNN:
+        * Used different array lengths (1 - 1 * 10^9)
+        * Random target
+        * Ascending, ordered array
+        * No heap size error
+        * Run each array test 1000 times
+        * Time recorded total time for 1000 hours
+    Big Apples:
+        * Tested large, small arrays.
+        * Selected indices
+        * Extra "for" loop vs "while" loop
+        * Larger time for longer arrays
+        * Binary search faster for smaller indices
+        * Linear relationship for linear search
+        * Tested each array search function 3 times to find average time.
+        * Averaged to find a true value
+    Strawberry Jam:
+        * 10000 times, array size 1000 - 10^6
+        * List size 1000 weird case binary was slower (initial lag)
+        * Linear increases linearly (shocking)
+        * Worst case scenario (target selected manually)
