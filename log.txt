@@ -3,18 +3,25 @@ APCS pd6
 L03 - Binary vs Linear
 
 12/16
-- Worked on the plan. 
-- Added all required files to the repo. 
+- Worked on the plan.
+- Added all required files to the repo.
 
 12/17
-- Adjusting plan to make randomness more clear. 
-- Added java files but SearchDriver file was not yet compilabile. 
+- Adjusting plan to make randomness more clear.
+- Added java files but SearchDriver file was not yet compilabile.
 
 12/18
 - Replaced BinSearch and LinSearch files with the code we implemented in hw48_search
 
 12/19
-- SearchDriver file now compilable. 
+- SearchDriver file now compilable.
 - Removed random elements from Arrays to avoid writing a sort method.
 - Updated plan to reflect changes.
-- Updated BinSearch and LinSearch files to make them more concise. 
+- Updated BinSearch and LinSearch files to make them more concise.
+
+12/20
+- Updated Readme.md to add results, test cases, and conclusion
+- Updated BinSearch file with numOfArrayTests set to 30 and counter set to 1000.
+- Updated SearchDriver to remove minTime
+- Updated notes file to add Disco and remaining QCC
+- Updated plan file to emphasize array size instead of array

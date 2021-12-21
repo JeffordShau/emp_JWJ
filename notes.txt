@@ -8,7 +8,8 @@ time spent:  0.5 hours
 
 /*
 DISCO:
-  - 
+  - We ran into memory errors when we set the numOfArrayTests to 30 and counter to 1000.
+  - We ran into errors while using "=="" instead of compareTo.
 QCC:
-  - 
+  - Does the hypothesis we are testing also refer to arrays with random elements? If so, would we also include the sorting process in the time elapsed?
 */

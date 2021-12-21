@@ -12,7 +12,7 @@ Do this 27 times:
   - The elements in the generated array will be used to test the two methods
   - Elements are already sorted for Binary Search
   For both Binary and Linear Search methods:
-    - Each search method will be tested on each array 1000 times.
+    - Each search method will be tested on each array size 1000 times.
     1. Store start time
     2. Search for random values of elements in the array.
     3. When value is found, store stop time.
